@@ -15,7 +15,10 @@ function isPrime(n){
         }
     }
     return true
-}
+} //time o(n)
+
+//Optimize primality Test
+//=> Integers arger than square root do not need to be checked because , whenever 'n=a*b' , one of two factors 'a' and ' 'b' is less than or equal to the square root of n
 
 console.log(isPrime(1));
 console.log(isPrime(5));
